@@ -1,0 +1,21 @@
+{% extends 'theam.html' %}
+ {% block content %}
+<div class ='container'>
+  <div class="row">
+       {% for y in x %}
+       <div class="col-md-3"
+
+<div class="card" style="width: 18rem;">
+  <img src="{{y.image}}" class="card-img-top" style="height:250px;" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{y.name}}</h5>
+   <p class="card-text">{{y.price}}</p>
+     <p class="card-text">{{y.stock}}</p>
+    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjX1KaV9b79AhUJlUsFHb_aDZsYABAAGgJzZg&ohost=www.google.com&cid=CAESaOD2uGK5Eu3YTW-amAGpqgvsT6fPHAKX-d4tOioN3wFkSatNzH7yknE4ueUy3Vh3r1tqfmsP8lVay4DMWSSuQIupTSE_RQhejoJ77Dc4pFdsQ8ifRUUVLKVGooGYbSbsN07fgx8KXQJX&sig=AOD64_07HtlXU1GCZ2YqmYnij5Ia_3HlqQ&q&adurl&ved=2ahUKEwjOl5-V9b79AhV72XMBHbwaCh0Q0Qx6BAgJEAE" class="btn btn-primary">BUY</a>
+  </div>
+</div>
+         {% endfor %}
+</div>
+</div>
+{% endblock %}
+
